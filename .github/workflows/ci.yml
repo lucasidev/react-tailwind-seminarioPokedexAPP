@@ -158,7 +158,7 @@ jobs:
           artifact-name: sbom
 
       - name: Scan SBOM for vulnerabilities (grype)
-        uses: anchore/scan-action@v3
+        uses: anchore/scan-action@v7
         with:
           sbom: sbom.cdx.json
           fail-build: false
